@@ -38,7 +38,7 @@ const searchInput = document.getElementById('search');
 searchButton.addEventListener('click', function() {
     const searchTerm = searchInput.value.trim();
     if (searchTerm !== '') {
-        const Base = `http://www.omdbapi.com/?s=${searchTerm}&apikey=7f6ee34&`;
+        const Base = `https://www.omdbapi.com/?s=${searchTerm}&apikey=7f6ee34&`;
         movie(Base);
     }
 });
