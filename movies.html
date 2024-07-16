@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="movies.css">
+</head>
+<body>
+    <div class="video-player-container">
+        <iframe class="player" width="420" height="315" src="" allowfullscreen></iframe>
+    </div>
+    <script>
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const imdbID = getQueryParameter('imdbID');
+            const player = document.querySelector('.player');
+            if (imdbID) {
+                player.src = `https://vidsrc.pro/embed/movie/${imdbID}`;  // Assuming the value is compatible with vidsrc.pro
+                // console.log('Iframe src set to:', player.src); // Debugging line
+            } else {
+                player.textContent = 'No video selected';
+            }
+        });
+        document.getElementById('play-button').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default action of the click event
+    // Add your code to start video playback or open the video player here
+});
+
+    </script>
+</body>
+</html>

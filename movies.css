@@ -1,0 +1,44 @@
+body {
+    background-color: #121212; /* Dark background color */
+    color: #ffffff; /* Light text color for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#movies-list {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#video-player-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e; /* Slightly lighter dark color for the container */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+iframe {
+    width: 1040px; /* Medium width */
+    height: 660px; /* Medium height */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for a subtle effect */
+}
+
+@media (max-width: 768px) {
+    #video-player-container {
+        padding: 10px; /* Decrease padding for smaller screens */
+    }
+
+    iframe {
+        width: 400px; 
+        height: 300px; /* Set a fixed height or adjust as needed for smaller screens */
+    }
+}
