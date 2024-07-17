@@ -1,23 +1,58 @@
+*{
+    background-color: #1E212B;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
-
-.container {
+.main{
+    background-color: #1E212B;
+  
+}
+.logo{
+    color: #66D7D1;
     width: 80%;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
 }
+.container {
+    color: #66D7D1;
+    margin-top: 10%;
+    width: 80%;
+    /* margin: 0 auto; */
+    text-align: center;
+    padding: 20px;
+}
+.card-container{
+    background-color: #1E212B;
+}
 
 #search-bar {
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
     margin-bottom: 20px;
     font-size: 16px;
+    
+    
 }
+#search{
+    border: 3px solid #66D7D1;
+    border-radius: 5px;
+    color: white;
+    height: 45px;
+    width: 350px;
+
+}
+#searchsubmit{
+    height: 45px;
+    width: 60px;
+    border: 3px solid #66D7D1;
+    border-radius: 5px;
+}
+
 
 #movies-list {
     display: flex;
@@ -28,7 +63,7 @@ body {
 
 .movie {
     background-color: white;
-    border: 1px solid #ddd;
+    border: 1px solid #797474;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
@@ -60,6 +95,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
+    color: #ffffff;
 }
 
 .card {
@@ -69,6 +105,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+     color: #ffffff;
 }
 
 .card img {
@@ -81,14 +118,19 @@ body {
 .card-body {
     padding: 15px;
     text-align: center;
-
+   
 }
+
 
 @media (max-width: 992px) {
     .card {
         flex: 1 0 30%;
         max-width: 30%;
     }
+    #search{
+        width: 300px;    
+    }
+    
 }
 
 @media (max-width: 768px) {
@@ -96,6 +138,7 @@ body {
         flex: 1 0 45%;
         max-width: 45%;
     }
+    
 }
 
 @media (max-width: 576px) {
@@ -103,4 +146,6 @@ body {
         flex: 1 0 100%;
         max-width: 100%;
     }
+    
+
 }

@@ -16,11 +16,11 @@ const movie = async (API) => {
 
         movies.forEach((movie) => {
             moviesCards += `
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem; border:2px solid #66D7D1;" >
                     <img src="${movie.Poster}" class="card-img-top" alt="${movie.Title} Poster">
                     <div class="card-body">
-                        <h5 class="card-title">${movie.Title}</h5>
-                        <a href="movies.html?imdbID=${movie.imdbID}" class="btn btn-primary" target="_blank">Watch now</a>
+                        <h5 class="card-title" style="color:#ffffff ">${movie.Title}</h5>
+                        <a href="movies.html?imdbID=${movie.imdbID}" class="btn btn-primary" target="_blank" style="background-color: #66D7D1; color:#1e212b; font-weight:bold; border:none;">Watch now</a>
                     </div>
                 </div>
             `;
